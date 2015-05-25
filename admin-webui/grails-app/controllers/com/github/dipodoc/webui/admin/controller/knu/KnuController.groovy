@@ -43,6 +43,21 @@ class KnuController {
         [ startingPost: startingPost, relatedSocialsList: relatedSocialsList ]
     }
 
+    def studvote() {
+        List socialsList = []
+        socialsList << [
+                id         : 1,
+                uri        : 'https://vk.com/wall-75632123_4064',
+                author     : [ uri: 'https://vk.com/shevapil', name: '#ШеваПил'],
+                timestamp  : '10 мая 2015 в 15:30',
+                importancy : 19,
+                sentiment  : '+1.7',
+                text       : shevapilPost1()
+        ]
+
+        [ socialsList: socialsList ]
+    }
+
     private static String startingDocText() {
         '''У зв’язку з необхідністю вивчення питання щодо порядку поселення та проживання студентів та аспірантів у гуртожитках університету наказом Ректора № від 23.04.2015р. була створена комісія по перевірці порядку поселення та проживання студентів та аспірантів у гуртожитках університету в такому складі:
 Безущак Оксана Омелянівна – заступник декана з навчальної роботи механіко-математичного факультету, голова комісії;
