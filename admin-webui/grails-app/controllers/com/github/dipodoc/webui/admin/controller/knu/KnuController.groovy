@@ -76,6 +76,39 @@ class KnuController {
         [ socialsList: socialsList ]
     }
 
+    def knufeed() {
+        List socialsList = []
+        socialsList << [
+                id         : 4,
+                uri        : 'https://www.facebook.com/shetelebachennya/photos/a.1528073170766340.1073741828.1523073294599661/1625783287661994',
+                author     : [ uri: 'https://www.facebook.com/shetelebachennya', name: 'Ш-ТБ. Телебачення твого університету'],
+                timestamp  : '24 мая 2015 в 16:45',
+                importancy : 1,
+                sentiment  : '+0.5',
+                text       : studvotePost1()
+        ]
+        socialsList << [
+                id         : 5,
+                uri        : 'https://vk.com/wall-1915629_7180',
+                author     : [ uri: 'https://vk.com/sp_knu', name: 'Студентський Парламент КНУ імені Тараса Шевченка'],
+                timestamp  : '23 мая 2015 в 18:19',
+                importancy : 19,
+                sentiment  : '0.0',
+                text       : studvotePost2()
+        ]
+        socialsList << [
+                id         : 6,
+                uri        : 'https://vk.com/wall-37616464_23331',
+                author     : [ uri: 'https://vk.com/knustudents', name: 'KNUstudents'],
+                timestamp  : '23 мая 2015 в 0:57',
+                importancy : 15,
+                sentiment  : '-1.3',
+                text       : studvotePost3()
+        ]
+
+        [ socialsList: socialsList ]
+    }
+
     private static String startingDocText() {
         '''У зв’язку з необхідністю вивчення питання щодо порядку поселення та проживання студентів та аспірантів у гуртожитках університету наказом Ректора № від 23.04.2015р. була створена комісія по перевірці порядку поселення та проживання студентів та аспірантів у гуртожитках університету в такому складі:
 Безущак Оксана Омелянівна – заступник декана з навчальної роботи механіко-математичного факультету, голова комісії;
