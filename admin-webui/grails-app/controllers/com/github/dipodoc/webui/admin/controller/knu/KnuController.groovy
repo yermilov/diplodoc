@@ -79,31 +79,67 @@ class KnuController {
     def knufeed() {
         List socialsList = []
         socialsList << [
-                id         : 4,
-                uri        : 'https://www.facebook.com/shetelebachennya/photos/a.1528073170766340.1073741828.1523073294599661/1625783287661994',
-                author     : [ uri: 'https://www.facebook.com/shetelebachennya', name: 'Ш-ТБ. Телебачення твого університету'],
-                timestamp  : '24 мая 2015 в 16:45',
-                importancy : 1,
-                sentiment  : '+0.5',
-                text       : studvotePost1()
+            id         : 11,
+            uri        : 'https://vk.com/wall31050425_6457',
+            author     : [ uri: 'https://vk.com/nesterova_knu', name: 'Аня Нестерова'],
+            timestamp  : '26 мая 2015 в 21:55',
+            importancy : 6,
+            sentiment  : '-0.5',
+            text       : knufeedPost5()
         ]
         socialsList << [
-                id         : 5,
-                uri        : 'https://vk.com/wall-1915629_7180',
-                author     : [ uri: 'https://vk.com/sp_knu', name: 'Студентський Парламент КНУ імені Тараса Шевченка'],
-                timestamp  : '23 мая 2015 в 18:19',
-                importancy : 19,
-                sentiment  : '0.0',
-                text       : studvotePost2()
+            id         : 13,
+            uri        : 'https://vk.com/wall-94788163_5',
+            author     : [ uri: 'https://vk.com/event94788163', name: '7th KNEU Liberty Class'],
+            timestamp  : '26 мая 2015 в 19:53',
+            importancy : 2,
+            sentiment  : '+0.2',
+            text       : knufeedPost7()
         ]
         socialsList << [
-                id         : 6,
-                uri        : 'https://vk.com/wall-37616464_23331',
-                author     : [ uri: 'https://vk.com/knustudents', name: 'KNUstudents'],
-                timestamp  : '23 мая 2015 в 0:57',
-                importancy : 15,
-                sentiment  : '-1.3',
-                text       : studvotePost3()
+            id         : 8,
+            uri        : 'https://vk.com/wall-59426821_880',
+            author     : [ uri: 'https://vk.com/knubrains', name: 'Чемпіонат КНУ з Що?Де?Коли?'],
+            timestamp  : '26 мая 2015 в 16:44',
+            importancy : 2,
+            sentiment  : '+0.2',
+            text       : knufeedPost2()
+        ]
+        socialsList << [
+            id         : 9,
+            uri        : 'https://vk.com/wall154463296_1753',
+            author     : [ uri: 'https://vk.com/id154463296', name: 'Юлия Казанцева'],
+            timestamp  : '26 мая 2015 в 10:41',
+            importancy : 9,
+            sentiment  : '+0.9',
+            text       : knufeedPost3()
+        ]
+        socialsList << [
+            id         : 10,
+            uri        : 'https://twitter.com/yurmas/status/603192358675578880',
+            author     : [ uri: 'https://twitter.com/yurmas', name: 'Iurii Panin'],
+            timestamp  : '06:33 - 26 трав. 2015',
+            importancy : 0,
+            sentiment  : '0.0',
+            text       : knufeedPost4()
+        ]
+        socialsList << [
+            id         : 7,
+            uri        : 'https://twitter.com/PavloSheremeta/status/600280495352639488',
+            author     : [ uri: 'https://twitter.com/PavloSheremeta', name: 'Pavlo Sheremeta'],
+            timestamp  : '05:43 - 18 трав. 2015',
+            importancy : 4,
+            sentiment  : '0.0',
+            text       : knufeedPost1()
+        ]
+        socialsList << [
+            id         : 12,
+            uri        : 'https://twitter.com/KyivUniversity/status/599113958868455424',
+            author     : [ uri: 'https://twitter.com/KyivUniversity', name: 'КНУ ім. Т. Шевченка'],
+            timestamp  : '00:27 - 15 трав. 2015',
+            importancy : 0,
+            sentiment  : '0.0',
+            text       : knufeedPost6()
         ]
 
         [ socialsList: socialsList ]
@@ -301,5 +337,56 @@ http://vk.com/sp_knu?w=wall-1915629_7023
 Итог. Очень здорово, что у нас в университете проходят такие выборы, дебаты. Но, честно говоря, мы глубоко задумались за кого голосовать. Назрел вопрос: кандидаты действительно хотят сделать университет лучше или хотят доказать всем, что они классные?
 
 #КНУвибори'''
+    }
+
+    private static String knufeedPost1() {
+        '''Сьогодні, 18.05 о 19:00 в КНУ ім Шевченка, ауд 329 на Тиждень реформ пам'яті Кахи Бендукідзе, Київ, 18-24 травня http://fb.me/6w1SpSspj '''
+    }
+
+    private static String knufeedPost2() {
+        '''Останній етап Чемпіонату КНУ виграла команда "Ребята Рината"! Протягом всієї гри точилась неймовірна боротьба одразу між великою кількістю команд-лідерів, і вже в останньому турі фаворити вирвали перемогу. Результати:
+
+1. Ребята Рината 24
+2. Убивающий функционал 23
+3-4. Ебола 22
+3-4. 42 22
+5-6. Кадик Кадирова 21
+5-6. Періс О Хілтон 21
+7. Ноги 20
+8. Мементо Віта 14
+9. А ф Лосєв 12
+10. Господин Фотошоп 11
+11-12. Галина Планка 10
+11-12. Грязные лесные тролли 10
+13. Каша Грей 5'''
+    }
+
+    private static String knufeedPost3() {
+        '''Я вже проголосувала за Голову СПУ))) А ви?)) @ Факультет Психології Кну Ім. Тараса Шевченко'''
+    }
+
+    private static String knufeedPost4() {
+        '''В Інституті філології КНУ імені Тарас Шевченка з 2015-2016 н. р. почнуть готувати судових лінгвістів-експертів. http://bit.ly/vnzorguaknu '''
+    }
+
+    private static String knufeedPost5() {
+        '''не умеешь - не берись #КНУ
+новый сайт #СПУ'''
+    }
+
+    private static String knufeedPost6() {
+        '''Зустріч з народним депутатом Мустафою Джемілєвим в КНУ ім Т Шевченка
+https://www.youtube.com/watch?v=5PHelolD8h8 … http://fb.me/6nOTU6Fv0 '''
+    }
+
+    private static String knufeedPost7() {
+        '''А продовжить розмову народний депутат України Сергій Лещенко. Він розповість про відмінності в свободах політика й журналіста, та про перепони свободі слова в Україні, а також з радістю відповість на всі ваші запитання.
+
+Сергій Анатолійович Лещенко — народний депутат 8-го скликання від партії «Блок Петра Порошенка» і викладач школи журналістики Українського католицького університету. До цього був заступником головного редактора інтернет-видання «Українська правда», закінчив Інститут Журналістики КНУ ім. Т. Шевченка.
+
+Реєструйся й приходь
+http://goo.gl/forms/Hs6doR4IgB
+
+#KNEULiberty'''
     }
 }
